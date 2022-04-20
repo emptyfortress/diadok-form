@@ -18,6 +18,9 @@ html(lang='en')
 				.row.mt-sm
 					div Основания передачи (сдачи)
 					.underline.grow 2 №3 от 29.05.2020
+
+			// Таблица с ценами **********************
+
 			section.mt-lg
 				table
 					thead
@@ -46,15 +49,15 @@ html(lang='en')
 							td.text-center шт
 							td.text-right 10
 							td.text-right 1.12
-							td.text-right 112.00
+							td.text-right 11.20
 							td.text-right 2.00
-							td.text-right 114.00
+							td.text-right 13.20
 						tr.total
 							td(colspan='5') Всего к оплате:
-							td 112.00
+							td 11.20
 							td 2.00
-							td 114.00
-
+							td 13.20
+			// Блок Всего*****************************
 			section.mt-lg
 				.row
 					.label Всего оказано услуг на сумму
@@ -68,10 +71,11 @@ html(lang='en')
 					.label.small Идентификатор государственного контракта, договора (соглашения) (при наличии)
 					.underline.grow
 
+			// Подписи **********************
 			section.mt-lg
 				.sign
 					.block1
-						div Сдал
+						div Сдал:
 						.underline.mt-sm Доксвижн консалт
 						.row
 							div ИНН
@@ -94,7 +98,7 @@ html(lang='en')
 							div Дата исполнения
 							.underline.grow 29 мая 2020 г.
 					.block2
-						div Принял
+						div Принял:
 						.underline.mt-sm Доксвижн Северо-Запад
 						.row
 							div ИНН
@@ -109,3 +113,57 @@ html(lang='en')
 						.row
 							div Дата приемя
 							.underline.grow 30 мая 2020 г.
+
+			// Начало печати Диадок **********************
+			.diadok
+				.id Идентификатор документа a456993fg9888aj3452
+				.round
+					svg(viewBox='0 0 294 294', fill='none', xmlns='http://www.w3.org/2000/svg')
+						path(
+							d='M77.5 232L66 197.5H199M217.5 232L228.5 197.5H199M126.5 55H199V197.5',
+							stroke='#6398b5',
+							stroke-width='18',
+							stroke-linecap='round',
+							stroke-linejoin='round'
+						)
+						path(
+							d='M101 104.5H157.5',
+							stroke='#6398b5',
+							stroke-width='18',
+							stroke-linecap='round',
+							stroke-linejoin='round'
+						)
+						path(
+							d='M90 147H158',
+							stroke='#6398b5',
+							stroke-width='18',
+							stroke-linecap='round',
+							stroke-linejoin='round'
+						)
+
+				.text Документ передан в тестовом режиме через оператора ЭДО АО "ПФ 'СКБ Контур'"
+				table.noborder.mt-sm
+					tr
+						th
+						th Владелец сертификата: организация, сотрудник
+						th Сертификат: серийный номер, период действия
+						th Дата и время подписания
+					tr
+						td.nowrap
+							span Подписи отправителя:
+							svg(viewBox='0 0 15 22', fill='none', xmlns='http://www.w3.org/2000/svg')
+								path(d='M2 21.5V12H13V22L7.5 18.5L2 21.5Z', fill='#6398b5')
+								circle(cx='7.5', cy='7.5', r='7', fill='white', stroke='#6398b5')
+								circle(cx='7.5', cy='7.5', r='4.5', fill='#6398b5')
+
+						td Тестовая организация
+							br
+							|Диадок Сертификат тестовый, директор
+						td 732F5F003EAB15A343C5F55D6A92D21E
+							br
+							|с 10.01.2020 08:36 по 10.01.2022 08:36
+							br
+							|GMT+03:00
+						td 29.05.2020 13:25 GMT+03:00
+							br
+							|Подпись соответствует файлу документа

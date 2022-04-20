@@ -1,5 +1,5 @@
 body {
-	margin: 0;
+	margin: 2rem;
 	background: #ccc;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
@@ -85,6 +85,16 @@ table {
 	td {
 		height: 1.2rem;
 	}
+	&.noborder {
+		font-size: 0.6rem;
+		th,
+		td {
+			border: none;
+			text-align: left;
+			vertical-align: top;
+			padding-top: 4px;
+		}
+	}
 }
 .petit {
 	font-size: 0.6rem;
@@ -121,8 +131,48 @@ table {
 		gap: 0.5rem;
 		height: 36px;
 	}
-	.underline {
-		// width: 100%;
-		// border-bottom: 1px solid #333;
+}
+.diadok {
+	width: 94%;
+	min-height: 100px;
+	margin-top: 3rem;
+	border: 2px solid #6398b5;
+	position: relative;
+	color: #6398b5;
+	padding: 1rem;
+	.round {
+		width: 60px;
+		height: 60px;
+		background: #fff;
+		border: 2px solid #6398b5;
+		border-radius: 50%;
+		position: absolute;
+		right: -30px;
+		top: -30px;
+		text-align: center;
+		svg {
+			margin-top: 12px;
+			width: 60%;
+		}
+	}
+	.id {
+		font-size: 0.6rem;
+		background: #fff;
+		position: absolute;
+		padding: 4px 10px;
+		top: -12px;
+		right: 31px;
+		text-align: right;
+	}
+	.text {
+		font-size: 1rem;
+	}
+}
+.nowrap {
+	white-space: nowrap;
+	svg {
+		width: 13px;
+		vertical-align: top;
+		margin-right: 6px;
 	}
 }
