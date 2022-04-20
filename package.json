@@ -8,7 +8,7 @@
     "pug": "pug -w -P ./ -o ./dist",
     "serve": "live-server --open=./dist",
     "start": "npm run sass & npm run pug & npm run serve & wait",
-    "build": "npm run sass & npm run pug"
+    "build": "sass assets/main.scss dist/main.css & pug ./ -o ./dist"
   },
   "author": "",
   "license": "ISC",
