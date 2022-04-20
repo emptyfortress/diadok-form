@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "sass": "sass -w assets/main.scss  dist/main.css",
-    "pug": "pug -w ./ -o ./dist",
+    "pug": "pug -w -P ./ -o ./dist",
     "serve": "live-server --open=./dist",
     "start": "npm run sass & npm run pug & npm run serve & wait"
   },

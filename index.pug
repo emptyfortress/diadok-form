@@ -31,14 +31,14 @@ html(lang='en')
 							th Сумма налога
 							th Сумма с учетом налога
 						tr.petit
-							td 1
-							td 2
-							td 3
-							td 4
-							td 5
-							td 6
-							td 7
-							td 8
+							th 1
+							th 2
+							th 3
+							th 4
+							th 5
+							th 6
+							th 7
+							th 8
 					tbody
 						tr
 							td.text-center 1
@@ -46,6 +46,53 @@ html(lang='en')
 							td.text-center шт
 							td.text-right 10
 							td.text-right 1.12
-							td.text-right 112
+							td.text-right 112.00
 							td.text-right 2.00
-							td.text-right 114
+							td.text-right 114.00
+						tr.total
+							td(colspan='5') Всего к оплате:
+							td 112.00
+							td 2.00
+							td 114.00
+
+			section.mt-lg
+				.row
+					.label Всего оказано услуг на сумму
+					.underline.grow.text-bold Сто четырнадцать рублей 00 копеек
+						.hint прописью
+				.row.mt-sm
+					.label В т.ч. НДС
+					.underline.grow.text-bold Два рубля 00 копеек
+						.hint прописью
+				.row.mt-sm
+					.label.small Идентификатор государственного контракта, договора (соглашения) (при наличии)
+					.underline.grow
+
+			section.mt-lg
+				.sign
+					.block1
+						div Сдал
+						.underline.mt-sm Доксвижн консалт
+						.row
+							div ИНН
+							.underline.grow 3434
+							div КПП
+							.underline.grow 3434
+						.row
+							div Адрес
+							.underline.grow г.Санкт-Петербург
+						.row
+							div Банковские реквизиты
+							.underline.grow
+						.row
+							.underline.grow Старший помощник
+								.hint должность
+						.row
+							.underline.grow Руслан Обоев
+								.hint фио
+						.row
+							div Дата исполнения
+							.underline.grow 29 мая 2020 г.
+					.block2
+						div Принял
+						.underline.mt-sm Доксвижн Северо-Запад

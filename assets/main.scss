@@ -23,6 +23,9 @@ h2 {
 .text-right {
 	text-align: right;
 }
+.text-bold {
+	font-weight: 600;
+}
 .mt-lg {
 	margin-top: 3rem;
 }
@@ -30,24 +33,39 @@ h2 {
 	margin-top: 2rem;
 }
 .mt-sm {
-	margin-top: 1rem;
+	margin-top: 1.2rem;
 }
 .row {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	gap: 2rem;
+	.label {
+		font-size: 0.8rem;
+		&.small {
+			width: 30%;
+		}
+	}
 }
 .underline {
 	border-bottom: 1px solid #333;
 	min-height: 20px;
+	position: relative;
+	.hint {
+		font-size: 0.6rem;
+		font-weight: 400;
+		color: #666;
+		position: absolute;
+		bottom: -12px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 }
 .grow {
 	flex-grow: 1;
 }
 table {
 	width: 100%;
-	border: 1px solid #333;
 	border-collapse: collapse;
 	font-size: 0.7rem;
 	td,
@@ -64,12 +82,47 @@ table {
 	th {
 		font-weight: 400;
 	}
+	td {
+		height: 1.2rem;
+	}
 }
 .petit {
 	font-size: 0.6rem;
-	td {
+	th {
 		text-align: center;
-		color: grey;
+		color: #666;
 	}
-	border-bottom: 2px solid #333;
+	border-top: 2px solid #333;
+}
+.total {
+	font-weight: bold;
+	font-size: 0.8rem;
+	text-align: right;
+	td:first-child {
+		border: none;
+	}
+}
+.sign {
+	display: flex;
+	justify-content: flex-start;
+	align-items: top;
+	font-size: 0.8rem;
+	width: 100%;
+	.block1 {
+		width: 50%;
+		padding-right: 0.5rem;
+		border-right: 1px solid #333;
+	}
+	.block2 {
+		width: 50%;
+		padding-left: 0.5rem;
+	}
+	.row {
+		gap: 0.5rem;
+		height: 36px;
+	}
+	.underline {
+		// width: 100%;
+		// border-bottom: 1px solid #333;
+	}
 }
