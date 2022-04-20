@@ -1,0 +1,28 @@
+{
+  "name": "html-diadok",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass -w assets/main.scss  dist/main.css",
+    "pug": "pug -w ./ -o ./dist",
+    "serve": "live-server --open=./dist",
+    "start": "npm run sass & npm run pug & npm run serve & wait"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@prettier/plugin-pug": "^1.20.1",
+    "eslint": "^8.13.0",
+    "eslint-plugin-pug": "^1.2.4",
+    "prettier": "^2.6.2",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "pug-plain-loader": "^1.1.0",
+    "sass": "^1.50.1"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
