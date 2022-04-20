@@ -20,6 +20,9 @@ h2 {
 .text-center {
 	text-align: center;
 }
+.text-right {
+	text-align: right;
+}
 .mt-lg {
 	margin-top: 3rem;
 }
@@ -50,8 +53,23 @@ table {
 	td,
 	th {
 		border: 1px solid #333;
+		padding: 2px 3px;
+		&.small {
+			width: 33px;
+		}
+		&.big {
+			width: 40%;
+		}
 	}
 	th {
 		font-weight: 400;
 	}
+}
+.petit {
+	font-size: 0.6rem;
+	td {
+		text-align: center;
+		color: grey;
+	}
+	border-bottom: 2px solid #333;
 }
